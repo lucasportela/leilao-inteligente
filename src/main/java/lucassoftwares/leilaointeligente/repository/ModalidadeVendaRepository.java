@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import lucassoftwares.leilaointeligente.model.ModalidadeVenda;
 
 @Repository
-public interface ModalidadeVendaRepository extends JpaRepository<ModalidadeVenda, Integer> {
+public interface ModalidadeVendaRepository extends JpaRepository<ModalidadeVenda, Long> {
 
 	ModalidadeVenda findByDescricao(String descricao);
 	

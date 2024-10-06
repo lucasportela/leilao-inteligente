@@ -1,13 +1,14 @@
 package lucassoftwares.leilaointeligente.repository;
 
-import lucassoftwares.leilaointeligente.model.Cidade;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import lucassoftwares.leilaointeligente.model.Cidade;
 
 @Repository
-public interface CidadeRepository extends JpaRepository<Cidade, Integer> {
+public interface CidadeRepository extends JpaRepository<Cidade, Long> {
 
     List<Cidade> findByIdEstado(int idEstado);
 
